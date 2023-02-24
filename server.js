@@ -10,9 +10,9 @@ app.use(express.static("frontend"));
 app.use(express.json());
 app.use(express.static("public",options));
 
-app.get("/", function(req, res){
-	res.sendFile(__dirname+"/PathFinder.java");
-});
+// app.get("/", function(req, res){
+// 	res.sendFile(__dirname+"/PathFinder.java");
+// });
 
 app.listen(port, function(){
     console.log("Server running on http://localhost:"+port);
